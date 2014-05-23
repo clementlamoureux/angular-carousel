@@ -17,8 +17,8 @@ angular.module('angular-carousel')
       };
     },
     template: '<div class="rn-carousel-controls">' +
-                '<span class="rn-carousel-control rn-carousel-control-prev" ng-click="prev()" ng-if="index > 0"></span>' +
-                '<span class="rn-carousel-control rn-carousel-control-next" ng-click="next()" ng-if="index < items.length - 1"></span>' +
+                '<span class="rn-carousel-control rn-carousel-control-prev" hm-tap="$event.stopPropagation()" ng-click="prev()" ng-if="index > 0"></span>' +
+                '<span class="rn-carousel-control rn-carousel-control-next" hm-tap="$event.stopPropagation()" ng-if="index < items.length - 1"></span>' +
               '</div>'
   };
 }]);
